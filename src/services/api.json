@@ -2,21 +2,21 @@
   "products": [
     {
       "id": 1,
-      "name": "Tenis Nike",
-      "description": "um tenis maneirao",
-      "price": 12
+      "name": "Nike Air Max Dia",
+      "description": "Design e Conforto",
+      "price": "R$140,90"
     },
     {
       "id": 2,
-      "name": "Tenis Adidas",
-      "description": "um tenis maneirao das adidas",
-      "price": 13
+      "name": "Tênis Adidas Breaknet",
+      "description": "Ótimo para Correr",
+      "price": "R$240,90"
     },
     {
       "id": 3,
-      "name": "Casaco bolado",
-      "description": "um casaco maneirao das adidas",
-      "price": 20
+      "name": "Tênis Adidas Breaknet",
+      "description": "Beleza e Conforto",
+      "price": "R$799,90"
     }
   ]
 }
