@@ -9,7 +9,7 @@ import {
 } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
-import { httpClient } from "../lib/axios";
+import { httpClient } from "../../lib/axios";
 
 interface Product {
   id: number;
