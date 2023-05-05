@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
+import {styles} from "./styles"
 import {
-  StyleSheet,
   FlatList,
   Text,
   View,
@@ -28,7 +28,8 @@ function Item({ product }: NewProduct) {
   }>();
 
   return (
-    <View>
+    <View style={styles.container}>
+      <View style={styles.header}></View>
       <TouchableOpacity
         onPress={() => navigation.navigate("ProductInfo", { id: product.id })}
       >
@@ -49,7 +50,7 @@ export function Home() {
       const { data } = await httpClient.get("/products");
       setProducts(data);
     } catch (err) {
-      console.log("deu ruim", err);
+      console.log("error", err);
       setProducts([]);
     } finally {
       setIsFetchingProducts(false);
@@ -75,11 +76,4 @@ export function Home() {
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
+
