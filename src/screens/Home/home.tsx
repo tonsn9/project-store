@@ -15,7 +15,7 @@ interface Product {
   id: number;
   name: string;
   description: string;
-  price: number;
+  price: string;
 }
 
 interface NewProduct {
@@ -34,7 +34,7 @@ function Item({ product }: NewProduct) {
         onPress={() => navigation.navigate("ProductInfo", { id: product.id })}
       >
         <Text>
-          {product.name} - ${product.price}
+          {product.name} - {product.price}
         </Text>
       </TouchableOpacity>
     </View>

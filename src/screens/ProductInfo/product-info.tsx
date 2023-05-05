@@ -8,7 +8,7 @@ interface Product {
   id: number;
   name: string;
   description: string;
-  price: number;
+  price: string;
 }
 
 export function ProductInfo({ route, navigation }: any) {
